@@ -1,5 +1,7 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidbarComponent } from './sidbar/sidbar.component';
 
@@ -11,7 +13,8 @@ import { SidbarComponent } from './sidbar/sidbar.component';
     SidbarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     NavbarComponent,
