@@ -32,11 +32,11 @@ public class Cliente {
     private Integer id;
 
     @Column(nullable = false, length = 150)
-    @NotEmpty(message = "O campo Nome é obrigatorio")
+    @NotEmpty(message = "O campo Nome é obrigatório")
     private String nome;
 
     @Column(nullable = false, length = 11)
-    @NotNull(message = "O campo CPF é obrigatorio")
+    @NotNull(message = "O campo CPF é obrigatório")
     @CPF(message = "CPF está inválido")
     private String cpf;
 
